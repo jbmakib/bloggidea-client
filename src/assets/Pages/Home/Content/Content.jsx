@@ -53,7 +53,7 @@ const Content = () => {
       </div>
       <div className="text-center">
         <NavLink
-          className="icon-link icon-link-hover link-primary link-underline-primary d-inline-block link-underline-opacity-25"
+          className="icon-link fw-semibold icon-link-hover link-primary link-underline-primary d-inline-block link-underline-opacity-25"
           to={"/login"}
         >
           Be a blogger {""}

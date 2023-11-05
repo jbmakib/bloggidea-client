@@ -8,6 +8,7 @@ import Home from "./assets/Pages/Home/Home/Home";
 import Blogs from "./assets/Pages/Blogs/Blogs/Blogs";
 import NotFound from "./assets/Pages/Shared/NotFound/NotFound";
 import About from "./assets/Pages/About/About/About";
+import Login from "./assets/Pages/Login/Login/Login";
 
 function App() {
   const router = createBrowserRouter([
@@ -26,6 +27,10 @@ function App() {
     {
       path: "/about",
       element: <About />,
+    },
+    {
+      path: "/login",
+      element: <Login />,
     },
     {
       path: "*",
