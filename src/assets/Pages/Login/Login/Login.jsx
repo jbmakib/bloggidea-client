@@ -47,17 +47,21 @@ const Login = () => {
                 placeholder="Password"
                 onInput={handleInputChange}
               />
-              <div className="d-flex justify-content-between">
+              <div className="d-flex justify-content-between ">
                 <div>
                   <input type="checkbox" name="remember" id="remember" />
                   <label htmlFor="remember"> Remember Me</label>
                 </div>
                 <div>Forgot Password?</div>
               </div>
-              <button className="btn btn-primary d-block w-100" type="submit">
+              <button
+                className="btn btn-primary d-block w-100 my-3"
+                type="submit"
+              >
                 Login
               </button>
             </form>
+            <p className="text-center">Or Login With</p>
           </div>
           <div className="col align-items-center">
             <img src={loginImg} alt="Login Vector" className="img-fluid my-5" />
