@@ -9,10 +9,14 @@ const Blogs = () => {
     return (
         <>
             <Header />
-            <h2>This is blogs</h2>
-            {posts.map((post) => (
-                <Blog key={post.id} post={post} />
-            ))}
+            <div className="container">
+                <div className="my-5 py-5">
+                    <h2>This is blogs</h2>
+                    {posts.map((post) => (
+                        <Blog key={post.id} post={post} />
+                    ))}
+                </div>
+            </div>
         </>
     );
 };

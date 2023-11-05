@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import "./Header.css";
 
-const Header = () => {
+const Header = (props) => {
     const [addBg, setAddBg] = useState(false);
     window.addEventListener("scroll", () => {
         if (window.scrollY > 30) {
@@ -15,8 +15,8 @@ const Header = () => {
         <nav
             className={`navbar navbar-expand-lg w-100 ${
                 addBg
-                    ? `bg-white navbar-primary sticky-top`
-                    : `navbar-dark fixed-top`
+                    ? `bg-white navbar sticky-top`
+                    : `${props.isHome ? `navbar-dark` : `navbar`} fixed-top`
             }`}
         >
             <div className="container-fluid">
