@@ -11,9 +11,16 @@ const Blogs = () => {
             <Header />
             <div className="container">
                 <div className="my-5 py-5">
-                    {posts.map((post) => (
-                        <Blog key={post.id} post={post} />
-                    ))}
+                    {posts.length === 0 ? (
+                        <div
+                            className="spinner-border text-primary mx-auto d-block"
+                            role="status"
+                        >
+                            <span className="visually-hidden">Loading...</span>
+                        </div>
+                    ) : (
+                        posts.map((post) => <Blog key={post.id} post={post} />)
+                    )}
                 </div>
             </div>
         </>

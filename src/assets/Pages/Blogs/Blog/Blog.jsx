@@ -7,14 +7,14 @@ const Blog = (props) => {
     fetch(`https://jsonplaceholder.typicode.com/users/${userId}`)
         .then((res) => res.json())
         .then((data) => SetName(data.name))
-        .catch((err) => console.log(err.message));
+        .catch((err) => console.log(err));
 
     return (
-        <div className="d-flex">
+        <div className="d-flex card p-3 my-3 border-primary">
             <div></div>
-            <div>
-                <h1>{title}</h1>
-                <h3>{name}</h3>
+            <div className="text">
+                <h3>{title}</h3>
+                <small className="text-muted">{name}</small>
                 <p>{body}</p>
             </div>
         </div>
